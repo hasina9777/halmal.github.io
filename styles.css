@@ -1,0 +1,177 @@
+/* Global Styles */
+:root {
+  --primary-color: #050b4e;
+  --secondary-color: #021b33;
+  --accent-color: #e3dbdb;
+  --background-color: #ecf0f1;
+  --text-color: #000000;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.0rem;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 100%;
+}
+
+/* Navigation Styles */
+nav {
+  flex: 0 0 200px;
+  margin-left: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Profile Image Styles */
+.profile-img {
+  display: block;
+  max-width: 20%; /* Ensures image scales down if too large for the container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 50%; /* Keeps the circular style */
+  margin: 0 auto; /* Centers the image horizontally */
+  
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Additional Styles for Specific Pages */
+
+/* Experience Page */
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+/* Projects Page */
+.project {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project h2 {
+  color: var(--primary-color);
+}
+
+/* Education Page */
+.education-item {
+  margin-bottom: 1rem;
+}
+
+/* Travel Page */
+#travel-tips, #personal-growth {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+#travel-tips h3, #personal-growth h3 {
+  color:#021b33(30deg 82% 43%);
+}

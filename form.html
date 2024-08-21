@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script>
+      function submitComment() {
+        var name = document.getElementById('name').value;
+        var comment = document.getElementById('comment').value;
+        google.script.run.submitComment(name, comment);
+        document.getElementById('status').innerText = "Comment submitted!";
+      }
+
+      function loadComments() {
+        google.script.run.withSuccessHandler(function(comments) {
+          var commentsContainer = document.getElementById('comments-container');
+          commentsContainer.innerHTML = '';
+          comments.forEach(function(comment) {
+            commentsContainer.innerHTML += '<p><strong>' + comment.name + ':</strong> ' + comment.comment + ' (' + new Date(comment.timestamp).toLocaleString() + ')</p>';
+          });
+        }).getComments();
+      }
+<iframe src="https://script.google.com/macros/s/AKfycbzfphabatk7_7GghLuDzJW5o5RXhN3C876T-rcJYC96jJXQLdJzS3hcufY6VAyThxr5/exec" width="100%" height="500"></iframe>
+
+      window.onload = loadComments;
+    </script>
+  </head>
+  <body>
+    <h3>Leave a Comment</h3>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"><br><br>
+    <label for="comment">Comment:</label><br>
+    <textarea id="comment"></textarea><br><br>
+    <button onclick="submitComment()">Submit</button>
+    <p id="status"></p>
+
+    <h3>Comments</h3>
+    <div id="comments-container"></div>
+  </body>
+</html>

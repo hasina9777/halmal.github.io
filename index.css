@@ -1,0 +1,81 @@
+/* Apply a full black background and white text */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 36px;
+}
+
+#main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-picture {
+    margin: 5px auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    border: 1px solid white;
+}
+
+.navigation-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navigation-menu a {
+    color: rgb(25, 4, 61);
+    text-decoration: none;
+}
+
+.navigation-menu a:hover {
+    text-decoration: underline;
+}
+
+#about-me h2 {
+    font-size: 28px;
+}
+
+#about-me p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.social-share {
+    margin-top: 20px;
+}
+
+.social-share button {
+    background-color: #0b6da2; /* LinkedIn blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.social-share button#share-twitter {
+    background-color: #020303; /* X black */
+}

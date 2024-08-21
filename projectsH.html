@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haleema Malik - Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+
+    <main id="main-content">
+        <section id="projects-list">
+            <article class="project">
+                <h2>Cultivating Critical Consciousness: A Pathway to Human Liberation | Honours Thesis</h2>
+               
+                <p>In the pursuit of genuine liberation, individuals may find themselves ensnared in a state of 'false consciousness,' unaware of the subtle socio-political and economic forces shaping their lives. This project delves into the concept of critical consciousness—a heightened state of awareness that empowers individuals to critically analyze power structures, societal norms, and sources of oppression—as a pivotal tool for achieving genuine freedom and autonomy. This study thus supports a critical examination of the quest for liberation from the invisible yet palpable chains that restrict our perceptions and actions, fostering the capacity to actively transform them.</p>
+           
+            </article>
+
+            <article class="project">
+                <h2> Nudge Theory | Insights into Subconscious Actions </h2>
+
+<p> Knowledge Integration eXhibition; a convergence of disciplines, teaching methods and creative minds in an object-centric exhibition on topics related to the United Nations’ Sustainable Development Goals.
+
+"The students in the Knowledge Integration program invite you to experience the culmination of our third-year design project: The Museum Course. Working in teams to produce these exhibits over the past 8 months has been a rewarding and unique experience.
+
+In building our exhibits, we have moved beyond the traditional projects and assignments typical of an undergraduate experience. The creation process allowed us to be self-directed and enabled us to incorporate skills from many different disciplines. The result is an exhibition that showcases our knowledge of museums and their design methods, as well as our teamwork and dedication to something that is a little out-of-the-box."
+
+Our project: Step into a space that shapes your way of making everyday choices and decisions. Discover the hidden forces that may influence how you think, act, and feel. Our exhibit will leave you wondering whether the choices that you make daily are really yours, and what you might do about it. Your decisions may not be as independent as you think!
+
+
+            
+            </article>
+        </section>
+
+        <nav id="sidebar">
+       
+       
+            </ul>
+        </nav>
+    </main>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <base target="_top">
+        <script>
+          function submitComment() {
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            google.script.run.submitComment(name, comment);
+            document.getElementById('status').innerText = "Comment submitted!";
+          }
+    
+          function loadComments() {
+            google.script.run.withSuccessHandler(function(comments) {
+              var commentsContainer = document.getElementById('comments-container');
+              commentsContainer.innerHTML = '';
+              comments.forEach(function(comment) {
+                commentsContainer.innerHTML += '<p><strong>' + comment.name + ':</strong> ' + comment.comment + ' (' + new Date(comment.timestamp).toLocaleString() + ')</p>';
+              });
+            }).getComments();
+          }
+    <iframe src="https://script.google.com/macros/s/AKfycbzfphabatk7_7GghLuDzJW5o5RXhN3C876T-rcJYC96jJXQLdJzS3hcufY6VAyThxr5/exec" width="100%" height="500"></iframe>
+    
+          window.onload = loadComments;
+        </script>
+      </head>
+      <body>
+        <h3> Would love to hear your thoughts: </h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br><br>
+        <label for="question or comment">Comment:</label><br>
+        <textarea id="Comment"></textarea><br><br>
+        <button onclick="submitComment()">Submit</button>
+        <p id="status"></p>
+    
+        <h3>Comments</h3>
+        <div id="comments-container"></div>
+      </body>
+    </html>
+    
+    <footer>
+        <p>&copy; 2024 Haleema Malik</p>
+    </footer>
+</body>
+</html>
